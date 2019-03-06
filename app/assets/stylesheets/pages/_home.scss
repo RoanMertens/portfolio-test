@@ -1,1 +1,66 @@
 // Specific CSS for your home-page
+#white-container{
+  background-color: white;
+  height: 10vw;
+}
+
+#green-container{
+  background-color: $green;
+  min-height: 100vh;
+  .flex-container{
+  display: flex;
+  }
+}
+
+#parent-to-logo{
+  position: relative;
+}
+
+#home-logo{
+  position: absolute;
+  top: -8.3vw;
+  left: -9vw;
+  width: 20vw;
+}
+
+#home-name{
+  text-align: center;
+  padding-bottom: 2vw;
+  .flex-container{
+    justify-content: center;
+  }
+  h3{
+    font-size: 4vw;
+    color: white;
+    padding: 0;
+    margin: 5vw 0 0 0;
+  }
+  h1{
+    font-size: 10vw;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.rounded-container{
+  border: 2px solid white;
+  border-right: 0;
+  border-radius: 50vw 0 0 50vw;
+  padding: 3vw 3vw;
+  margin-left: 30vw;
+  h2{
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    padding: 3;
+    margin: 0;
+  }
+  a{
+    font-size: 2vw;
+  }
+  .flex-container{
+    justify-content: center;
+  }
+}
+
