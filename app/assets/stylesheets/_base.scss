@@ -2,7 +2,6 @@
 /* Declaring base styles and removing default styles */
 /* --------------------------------------------------*/
 
-
 /* Remove padding and margin */
 * {
   margin: 0;
@@ -11,17 +10,9 @@
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption,
+figure, footer, header, hgroup, menu,
+nav, section {
   display: block;
 }
 body {

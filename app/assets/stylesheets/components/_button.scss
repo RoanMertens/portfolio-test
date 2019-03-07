@@ -1,32 +1,3 @@
 /* --------------------------------------------------*/
 /* ----------Declaring global button styles----------*/
 /* --------------------------------------------------*/
-
-.btn-medium {
-  color: #999999;
-  border: 1px solid #999999;
-  padding: 10px 15px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
-  &:hover {
-    opacity: 1;
-    text-decoration: none;
-    color: #999999;
-  }
-}
-
-.btn-home-normal {
-  color: white;
-  border: 2px solid white;
-  padding: 1vw 1vw;
-  margin: 0 1vw;
-  border-radius: 50px;
-  font-weight: bold;
-  background: $green;
-  text-decoration: none;
-  &:hover {
-    background: #3ac162;
-    color: white;
-  }
-}

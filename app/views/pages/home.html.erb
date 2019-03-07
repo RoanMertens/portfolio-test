@@ -1,28 +1,28 @@
-<div id="green-container">
+<div class="home-container">
+
   <div id="white-container"></div>
-  <div id="home-name">
-    <div class="flex-container">
-      <div id="parent-to-logo">
-        <%= image_tag "logo_color.png", alt: "Roan Mertens logo", id:"home-logo" %>
-        <h3>Hi, I'm</h3>
-      </div>
-      <h1>Roan</h1>
-    </div>
-    <h1>Mertens</h1>
+
+  <%= image_tag "logo_color.png", alt: "Roan Mertens logo", id:"home-logo" %>
+
+  <div id="green-container"></div>
+
+  <div class="btn btn-home-normal">
+    <%= link_to 'about me', about_path %>
   </div>
 
-  <div class="rounded-container">
-    <h2>A full stack web developer</h2>
-    <div class="flex-container">
-      <div class="btn btn-home-normal">
-        <%= link_to 'about me', about_path %>
-      </div>
-      <div class="btn btn-home-normal">
-        <%= link_to 'projects I worked on', projects_path %>
-      </div>
-      <div class="btn btn-home-normal">
-        <%= link_to 'contact me', contact_path %>
-      </div>
-    </div>
+  <div class="btn btn-home-normal">
+    <%= link_to 'projects I worked on', projects_path %>
   </div>
+
+  <div class="btn btn-home-normal">
+    <%= link_to 'contact me', contact_path %>
+  </div>
+
+  <div class="flex-container">
+      <h3>Hi, I'm</h3>
+      <h1>Roan Mertens</h1>
+      <h2>A full stack web developer</h2>
+  </div>
+
 </div>
+
