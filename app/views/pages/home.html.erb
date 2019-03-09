@@ -1,28 +1,36 @@
-<div class="home-container">
 
-  <div id="white-container"></div>
+<!-- floating background -->
+<div id="background">
+  <div id="main-container">
+    <div id="sub-container">
+      <div id="title-container">
+        <%#= image_tag "logo_color.png", alt: "Roan Mertens logo", id:"home-logo-image" %>
+      </div>
 
-  <%= image_tag "logo_color.png", alt: "Roan Mertens logo", id:"home-logo" %>
-
-  <div id="green-container"></div>
-
-  <div class="btn btn-home-normal">
-    <%= link_to 'about me', about_path %>
+    </div>
   </div>
-
-  <div class="btn btn-home-normal">
-    <%= link_to 'projects I worked on', projects_path %>
-  </div>
-
-  <div class="btn btn-home-normal">
-    <%= link_to 'contact me', contact_path %>
-  </div>
-
-  <div class="flex-container">
-      <h3>Hi, I'm</h3>
-      <h1>Roan Mertens</h1>
-      <h2>A full stack web developer</h2>
-  </div>
-
 </div>
 
+
+
+
+
+
+
+<!-- buttons -->
+<!-- <p>Why are you here?</p> -->
+  <!-- <p>I need a website!</p> -->
+<%#=link_to(about_path, :class => "button bg") do %>
+  <!-- <i class="fas fa-code"></i> -->
+  <!-- <p>projects</p> -->
+<%# end %>
+  <!-- <p>I am here to recruit you!</p> -->
+<%#= link_to(projects_path, :class => "button bg") do %>
+  <!-- <i class="fas fa-search"></i> -->
+  <!-- <p>about</p> -->
+<%# end %>
+  <!-- <p>I want to be your friend!</p> -->
+<%#= link_to(contact_path, :class => "button bg") do %>
+  <!-- <i class="fas fa-plus"></i> -->
+  <!-- <p>contact</p> -->
+<%# end %>

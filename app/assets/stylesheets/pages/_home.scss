@@ -2,68 +2,55 @@
 /* ---------Declaring styles for home page-----------*/
 /* --------------------------------------------------*/
 
-// #white-container{
-//   background-color: white;
-//   height: 10vw;
-// }
+// sticky background image
 
-// #green-container{
-//   background-color: $green;
-//   min-height: 100vh;
-//   .flex-container{
-//   display: flex;
-//   }
-// }
+#background{
+  background:
+    linear-gradient(
+      $black-half,
+      $black-half
+    ),
+    url(background.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-// #parent-to-logo{
-//   position: relative;
-// }
+// scrollable main container
+#main-container{
+  top: 50px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  background-color: $red;
+}
 
-// #home-logo{
-//   position: absolute;
-//   top: -8.3vw;
-//   left: -9vw;
-//   width: 20vw;
-// }
+#sub-container{
+  width: 100%;
+  padding: 3vw 0;
+  background-color: $blue;
+}
 
-// #home-name{
-//   text-align: center;
-//   padding-bottom: 2vw;
-//   .flex-container{
-//     justify-content: center;
-//   }
-//   h3{
-//     font-size: 4vw;
-//     color: white;
-//     padding: 0;
-//     margin: 5vw 0 0 0;
-//   }
-//   h1{
-//     font-size: 10vw;
-//     color: white;
-//     padding: 0;
-//     margin: 0;
-//   }
-// }
+#title-container{
+  background-color: white;
+}
 
-// .rounded-container{
-//   border: 2px solid white;
-//   border-right: 0;
-//   border-radius: 50vw 0 0 50vw;
-//   padding: 3vw 3vw;
-//   margin-left: 30vw;
-//   h2{
-//     text-align: center;
-//     font-size: 4vw;
-//     color: white;
-//     padding: 3;
-//     margin: 0;
-//   }
-//   a{
-//     font-size: 2vw;
-//   }
-//   .flex-container{
-//     justify-content: center;
-//   }
-// }
+@media only screen and (min-width: 700px) {
+  #title-container{
+    height: 30vw;
+    width: 45vw;
+    // padding: 2.5vw;
+    margin-left: 3vw;
+    // margin-top: 3vw;
+  }
+}
 
+@media only screen and (max-width: 700px) {
+  #title-container{
+    height: 50vw;
+    width: 90vw;
+    padding: 5%;
+    margin: 3vw auto ;
+  }
+}

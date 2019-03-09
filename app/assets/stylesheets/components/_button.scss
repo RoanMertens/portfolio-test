@@ -1,3 +1,70 @@
 /* --------------------------------------------------*/
 /* ----------Declaring global button styles----------*/
 /* --------------------------------------------------*/
+
+.button {
+  display: inline-block;
+  text-align: center;
+  font-weight: 900;
+  position: relative;
+  padding: .5rem .75rem;
+  margin: 0 .25rem .5rem .25rem;
+  letter-spacing: normal;
+}
+
+.button.sm {
+  border: solid 2px $black;
+  font-size: .9rem;
+
+}
+
+.button.md {
+  border: solid 3px $black;
+  font-size: 1.4rem;
+}
+
+.button.bg {
+  border: solid 4px $black;
+  font-size: 2rem;
+}
+
+.button:after{
+  content: "";
+  padding: 0 .2rem .2rem 0;
+  height: 105%;
+  width: 103%;
+  background-color: $light-blue;
+  border: solid 3px $light-blue;
+  z-index: -1;
+  position: absolute;
+  transition: top .15s ease, left .15s ease, padding .15s ease;
+  opacity: .8;
+}
+
+.button.sm:after {
+  top: .2rem;
+  left: .2rem;
+}
+
+.button.md:after {
+  top: .3rem;
+  left: .3rem;
+}
+
+.button.bg:after {
+  top: .4rem;
+  left: .4rem;
+}
+
+.button:hover:after {
+  top: 0;
+  left: 0;
+  padding: 0;
+  opacity: 0.9;
+}
+
+a.button {
+  color: $black;
+  text-decoration: none;
+}
+

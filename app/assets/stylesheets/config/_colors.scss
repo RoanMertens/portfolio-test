@@ -6,11 +6,28 @@
 // Define variables for your color scheme
 
 // global colors:
-$red: #EE5F5B;
-$blue: #469AE0;
-$yellow: #FDB631;
-$orange: #E67E22;
-$green: #2D6224;
-$gray: #000000;
-$light-gray: #F4F4F4;
-$black: #1a1a1a;
+$black:         rgba(52, 52, 52, 1);
+$black-half:    rgba(52, 52, 52, 0.8);
+$white:         rgba(242, 242, 242, 1);
+
+$light-red:     #EE5F5B;
+$red:           #EE5F5B;
+$dark-red:      #EE5F5B;
+
+$light-blue:    rgba(106, 180, 237, 1); //main color 1
+$blue:          rgba(53, 140, 206, 1);
+$dark-blue:     rgba(29, 83, 124, 1);
+
+$light-yellow:  rgba(255, 230, 109, 1);
+$yellow:        rgba(255, 218, 71, 1);
+$dark-yellow:   rgba(224, 179, 0, 1);
+
+$light-green:   rgba(132, 206, 53, 1);
+$green:         rgba(128, 175, 108, 1);
+$dark-green:    rgba(107, 127, 59, 1);
+
+$orange:        #E67E22;
+
+$light-gray:    #F4F4F4;
+$gray:          rgba(96, 96, 96, 0);
+$dark-gray:     #F4F4F4;
