@@ -3,7 +3,6 @@
 /* --------------------------------------------------*/
 
 // sticky background image
-
 #background{
   background:
     linear-gradient(
@@ -15,42 +14,67 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-// scrollable main container
-#main-container{
-  top: 50px;
-  width: 100%;
+  padding: 3vw;
   min-height: 100vh;
-  margin: auto;
-  background-color: $red;
 }
 
-#sub-container{
+#flex-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 3vw;
+  // background-color: $green;
+}
+
+.container{
   width: 100%;
-  padding: 3vw 0;
-  background-color: $blue;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  h3{
+    text-align: center;
+    color: $black;
+    margin: 3vw 0;
+  }
+}
+
+.container.two{
+  background-color: white;
 }
 
 #title-container{
   background-color: white;
 }
 
+.flex-item{
+  text-align: center;
+  color: $black;
+  // background-color: $green;
+  min-width: 15vw;
+  h5{
+    margin: 2vw 0;
+  }
+}
+
 @media only screen and (min-width: 700px) {
   #title-container{
     height: 30vw;
     width: 45vw;
-    // padding: 2.5vw;
-    margin-left: 3vw;
-    // margin-top: 3vw;
+  }
+  .container.two{
+    margin-top: 6vw;
   }
 }
 
 @media only screen and (max-width: 700px) {
   #title-container{
     height: 50vw;
-    width: 90vw;
-    padding: 5%;
-    margin: 3vw auto ;
+    width: 100%;
+  }
+  .container.two{
+    margin-top: 30vw;
   }
 }
+
+

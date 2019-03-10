@@ -1,36 +1,40 @@
 
 <!-- floating background -->
 <div id="background">
-  <div id="main-container">
-    <div id="sub-container">
-      <div id="title-container">
-        <%#= image_tag "logo_color.png", alt: "Roan Mertens logo", id:"home-logo-image" %>
-      </div>
-
+  <div class="container one">
+    <div id="title-container">
+      <%#= image_tag "logo_color.png", alt: "Roan Mertens logo", id:"home-logo-image" %>
     </div>
   </div>
+  <div class="container two">
+    <h3>Why are you here?</h3>
+    <div id="flex-container">
+      <div class="flex-item">
+        <h5>I need a website!</h5>
+        <%=link_to(about_path, :class => "button bg") do %>
+        <i class="fas fa-code"></i>
+        <p>projects</p>
+        <% end %>
+      </div>
+      <div class="flex-item">
+        <h5>I am here to recruit you!</h5>
+        <%= link_to(projects_path, :class => "button bg") do %>
+          <i class="fas fa-search"></i>
+          <p>about</p>
+        <% end %>
+      </div>
+      <div class="flex-item">
+        <h5>I want to be your friend!</h5>
+        <%= link_to(contact_path, :class => "button bg") do %>
+          <i class="fas fa-plus"></i>
+          <p>contact</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<!--   <div id="main-container">
+  </div> -->
 </div>
 
 
 
-
-
-
-
-<!-- buttons -->
-<!-- <p>Why are you here?</p> -->
-  <!-- <p>I need a website!</p> -->
-<%#=link_to(about_path, :class => "button bg") do %>
-  <!-- <i class="fas fa-code"></i> -->
-  <!-- <p>projects</p> -->
-<%# end %>
-  <!-- <p>I am here to recruit you!</p> -->
-<%#= link_to(projects_path, :class => "button bg") do %>
-  <!-- <i class="fas fa-search"></i> -->
-  <!-- <p>about</p> -->
-<%# end %>
-  <!-- <p>I want to be your friend!</p> -->
-<%#= link_to(contact_path, :class => "button bg") do %>
-  <!-- <i class="fas fa-plus"></i> -->
-  <!-- <p>contact</p> -->
-<%# end %>
