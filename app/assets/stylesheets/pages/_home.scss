@@ -47,9 +47,11 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 4fr 4fr 3fr 1fr;
-  background-color: white;
+  // background-color: white;
   h1{
     font-family: $home-header-font;
+    color: $black;
+    text-align: center;
   }
 }
 
@@ -58,24 +60,36 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  h1{
+    font-size: 7rem;
+  }
 }
 .grid-box.im{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  h1{
+    font-size: 7rem;
+  }
 }
 .grid-box.first-name{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  h1{
+    font-size: 14.35rem;
+  }
 }
 .grid-box.last-name{
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+  h1{
+    font-size: 8rem;
+  }
 }
 .grid-box.description{
   grid-column-start: 1;
@@ -86,7 +100,7 @@
 .grid-box{
   // background-color: $black;
   h1{
-  background-color: $black;
+  background-color: $white;
   margin: 3px;
   // width: 30%;
   // height: 30%;
