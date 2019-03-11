@@ -61,7 +61,7 @@
   grid-row-start: 1;
   grid-row-end: 2;
   h1{
-    font-size: 7rem;
+    font-size: 12vw;
   }
 }
 .grid-box.im{
@@ -70,7 +70,7 @@
   grid-row-start: 2;
   grid-row-end: 3;
   h1{
-    font-size: 7rem;
+    font-size: 8vw;
   }
 }
 .grid-box.first-name{
@@ -79,7 +79,7 @@
   grid-row-start: 1;
   grid-row-end: 3;
   h1{
-    font-size: 14.35rem;
+    font-size: 20.4vw;
   }
 }
 .grid-box.last-name{
@@ -88,7 +88,7 @@
   grid-row-start: 3;
   grid-row-end: 4;
   h1{
-    font-size: 8rem;
+    font-size: 7vw;
   }
 }
 .grid-box.description{
@@ -96,6 +96,9 @@
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
+  h1{
+    font-size: 2vw;
+  }
 }
 .grid-box{
   // background-color: $black;
@@ -124,7 +127,7 @@
 @media only screen and (min-width: 700px) {
   #title-container{
     height: 30vw;
-    width: 45vw;
+    width: 60vw;
   }
   .container.two{
     margin-top: 6vw;
