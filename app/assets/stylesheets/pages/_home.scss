@@ -39,6 +39,10 @@
   }
 }
 
+.container.one{
+  overflow: hidden;
+}
+
 .container.two{
   background-color: white;
 }
@@ -60,27 +64,18 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  h1{
-    font-size: 12vw;
-  }
 }
 .grid-box.im{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  h1{
-    font-size: 8vw;
-  }
 }
 .grid-box.first-name{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  h1{
-    font-size: 20.4vw;
-  }
 }
 .grid-box.last-name{
   grid-column-start: 1;
@@ -88,38 +83,50 @@
   grid-row-start: 3;
   grid-row-end: 4;
   position: relative;
-  h1{
-    font-size: 7vw;
-    height: 7vw;
-  }
 }
 .grid-box.description{
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  h1{
-    font-size: 3vw;
-  }
 }
 .grid-box{
-  // background-color: $black;
-  h1{
   background-color: $white;
   margin: 3px;
-  // width: 30%;
-  // height: 30%;
-  // padding: 10%;
-
+  h1{
+    margin: 0;
   }
 }
-
+.grid-box.hi{
+  h1{
+  font-size: 7vw;
+  }
+}
+.grid-box.im{
+  h1{
+  font-size: 7vw;
+  }
+}
+.grid-box.first-name{
+  h1{
+  font-size: 15vw;
+  }
+}
+.grid-box.last-name{
+  h1{
+  font-size: 7vw;
+  }
+}
+.grid-box.description{
+  h1{
+  font-size: 2vw;
+  }
+}
 
 
 .flex-item{
   text-align: center;
   color: $black;
-  // background-color: $green;
   min-width: 15vw;
   h5{
     margin: 2vw 0;
@@ -129,7 +136,7 @@
 @media only screen and (min-width: 700px) {
   #title-container{
     height: 30vw;
-    width: 60vw;
+    width: 55vw;
   }
   .container.two{
     margin-top: 6vw;
