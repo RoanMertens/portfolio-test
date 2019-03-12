@@ -17,20 +17,16 @@
   padding: 3vw;
   min-height: 100vh;
 }
-
 #flex-container{
   display: flex;
   justify-content: space-around;
   margin: 3vw;
-  // background-color: $green;
 }
-
 .container{
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 .container{
   h3{
     text-align: center;
@@ -38,15 +34,10 @@
     margin: 3vw 0;
   }
 }
-
-.container.one{
-  overflow: hidden;
-}
-
 .container.two{
+  position: relative;
   background-color: white;
 }
-
 #title-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -58,7 +49,6 @@
     text-align: center;
   }
 }
-
 .grid-box.hi{
   grid-column-start: 1;
   grid-column-end: 2;
@@ -97,33 +87,6 @@
     margin: 0;
   }
 }
-.grid-box.hi{
-  h1{
-  font-size: 7vw;
-  }
-}
-.grid-box.im{
-  h1{
-  font-size: 7vw;
-  }
-}
-.grid-box.first-name{
-  h1{
-  font-size: 15vw;
-  }
-}
-.grid-box.last-name{
-  h1{
-  font-size: 7vw;
-  }
-}
-.grid-box.description{
-  h1{
-  font-size: 2vw;
-  }
-}
-
-
 .flex-item{
   text-align: center;
   color: $black;
@@ -133,13 +96,47 @@
   }
 }
 
+#home-logo-image{
+  position: absolute;
+}
+
 @media only screen and (min-width: 700px) {
   #title-container{
     height: 30vw;
     width: 55vw;
   }
+  #home-logo-image{
+    top: -13vw;
+    right: 4vw;
+    width: 30%;
+  }
   .container.two{
     margin-top: 6vw;
+  }
+  .grid-box.hi{
+    h1{
+    font-size: 7vw;
+    }
+  }
+  .grid-box.im{
+    h1{
+    font-size: 7vw;
+    }
+  }
+  .grid-box.first-name{
+    h1{
+    font-size: 15vw;
+    }
+  }
+  .grid-box.last-name{
+    h1{
+    font-size: 7vw;
+    }
+  }
+  .grid-box.description{
+    h1{
+    font-size: 2vw;
+    }
   }
 }
 
@@ -148,8 +145,38 @@
     height: 50vw;
     width: 100%;
   }
+  #home-logo-image{
+    top: -26vw;
+    right: 18vw;
+    width: 60%;
+  }
   .container.two{
     margin-top: 30vw;
+  }
+  .grid-box.hi{
+    h1{
+    font-size: 14vw;
+    }
+  }
+  .grid-box.im{
+    h1{
+    font-size: 14vw;
+    }
+  }
+  .grid-box.first-name{
+    h1{
+    font-size: 25vw;
+    }
+  }
+  .grid-box.last-name{
+    h1{
+    font-size: 10vw;
+    }
+  }
+  .grid-box.description{
+    h1{
+    font-size: 4vw;
+    }
   }
 }
 
