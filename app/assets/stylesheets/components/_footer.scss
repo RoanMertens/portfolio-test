@@ -1,0 +1,24 @@
+#footer-text{
+  margin-top: 3vw;
+  padding: 2vw 0;
+  border: solid $white 2px;
+  display: flex;
+  justify-content: space-around;
+  h6{
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #footer-text{
+    flex-direction: row;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #footer-text{
+    flex-direction: column;
+    text-align: center;
+
+  }
+}
