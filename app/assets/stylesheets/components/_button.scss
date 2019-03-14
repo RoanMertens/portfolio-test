@@ -13,11 +13,14 @@
   transform-style: preserve-3d;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button.sm {
   border: solid 2px $black;
   font-size: .9rem;
   z-index: 1;
-
 
 }
 
