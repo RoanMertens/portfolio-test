@@ -15,13 +15,26 @@ const openModal = () => {
   const span = document.getElementsByClassName("close")[0];
   // When the user clicks the button, open the modal
   btn_one.onclick = function() {
-    modal.style.display = "block";
+    if (is_mobile) {
+
+    } else {
+      modal.style.display = "block";
+    }
   }
   btn_two.onclick = function() {
     modal.style.display = "block";
+    if (is_mobile) {
+
+    } else {
+      modal.style.display = "block";
+    }
   }
   btn_three.onclick = function() {
-    modal.style.display = "block";
+    if (is_mobile) {
+
+    } else {
+      modal.style.display = "block";
+    }
   }
 
   // When the user clicks on <span> (x), close the modal
