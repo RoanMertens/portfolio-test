@@ -28,10 +28,10 @@
       </div>
       <div class="flex-item">
         <h5>I want to be your friend!</h5>
-          <%= link_to(contact_path, :id => "myBtn-three", :class => "button bg") do %>
+        <%= mail_to"contact@rmertens.com", :id => "myBtn-three", :class => "button bg" do %>
           <i class="fas fa-plus"></i>
           <p>contact</p>
-          <% end %>
+        <% end %>
       </div>
     </div>
   </div>
