@@ -1,1 +1,31 @@
-<div id="modal-inner"></div>
+<div id="modal-inner">
+  <div class="green-container">
+    <div class="title">
+      <h2>Projects</h2>
+    </div>
+    <div class="container padded">
+      <div class="row">
+        <% @projects.each do |project| %>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+<!--             <div class="card">
+              <h3><%#= link_to project.name, project_path(project) %></h3>
+              <p>website logo: <%#= project.location_url %></p>
+              <p>github logo: <%#= project.github_url %></p>
+              <p>image url: <%#= project.image_url %></p>
+              <p>text: <%#= project.blurb %></p>
+            </div> -->
+              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+                <div class="card-category"><i class="fab fa-github-square"></i> GitHub</div>
+                <div class="card-description">
+                  <h2><%= project.name %></h2>
+                  <p><%= project.blurb.first(80) %></p>
+                </div>
+                <img class="card-user" src="">
+                <a class="card-link" href="<%= project_path(project) %>" ></a>
+              </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

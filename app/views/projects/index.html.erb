@@ -1,33 +1,122 @@
-
+<!--
 <div class="green-container">
   <div class="title">
     <h2>Projects</h2>
   </div>
   <div class="container padded">
     <div class="row">
-      <% @projects.each do |project| %>
+      <%# @projects.each do |project| %>
         <div class="col-xs-12 col-sm-6 col-md-3">
-<!--           <div class="card">
-            <h3><%= link_to project.name, project_path(project) %></h3>
-            <p>website logo: <%= project.location_url %></p>
-            <p>github logo: <%= project.github_url %></p>
-            <p>image url: <%= project.image_url %></p>
-            <p>text: <%= project.blurb %></p>
-          </div> -->
+          <div class="card">
+            <h3><%#= link_to project.name, project_path(project) %></h3>
+            <p>website logo: <%#= project.location_url %></p>
+            <p>github logo: <%#= project.github_url %></p>
+            <p>image url: <%#= project.image_url %></p>
+            <p>text: <%#= project.blurb %></p>
+          </div>
             <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
               <div class="card-category"><i class="fab fa-github-square"></i> GitHub</div>
               <div class="card-description">
-                <h2><%= project.name %></h2>
-                <p><%= project.blurb.first(80) %></p>
+                <h2><%#= project.name %></h2>
+                <p><%#= project.blurb.first(80) %></p>
               </div>
               <img class="card-user" src="">
-              <a class="card-link" href="<%= project_path(project) %>" ></a>
+              <a class="card-link" href="<%#= project_path(project) %>" ></a>
             </div>
         </div>
-      <% end %>
+      <%# end %>
     </div>
+  </div>
+</div> -->
+
+<div id="background">
+  <div class="container one">
+    <div id="title-container">
+      <div class="grid-box hi"><h1>HI</h1></div>
+      <div class="grid-box im"><h1>I'M</h1></div>
+      <div class="grid-box first-name"><h1>ROAN</h1></div>
+      <div class="grid-box last-name"><h1>MERTENS</h1></div>
+      <div class="grid-box description"><h1>FULL-STACK WEB DEVELOPER</h1></div>
+    </div>
+  </div>
+  <div class="container two">
+    <%= image_tag "logo_new_three.svg", alt: "Roan Mertens logo", id:"home-logo-image" %>
+    <h3>Why are you here?</h3>
+    <div id="flex-container">
+      <div class="flex-item">
+        <h5>I am here to recruit you!</h5>
+        <%=link_to(about_path, :id => "myBtn-one", :class => "button bg") do %>
+          <i class="fas fa-search"></i>
+          <p>about</p>
+        <% end %>
+      </div>
+      <div class="flex-item">
+        <h5>I need a website!</h5>
+        <div id="projects-button" class="button bg">
+        <%#= link_to(projects_path, :id => "projects-button", :class => "button bg") do %>
+          <i class="fas fa-code"></i>
+          <p>projects</p>
+        <%# end %>
+        </div>
+      </div>
+      <div class="flex-item">
+        <h5>I want to be your friend!</h5>
+        <%= mail_to"contact@rmertens.com", :id => "myBtn-three", :class => "button bg" do %>
+          <i class="fas fa-plus"></i>
+          <p>contact</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
+
+<div id="projects-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <%= render "shared/modal" %>
+    <!-- <p>hellooo thereee</p> -->
   </div>
 </div>
 
+<script type="text/javascript">
+  const openModal = () => {
 
+    // check type of device
+    // const is_mobile = checkDevices();
+    // console.log(is_mobile);
+    // Get the modal
+    const modal = document.getElementById('projects-modal');
+
+    // Get the buttons that open the modal
+    const btn_one = document.getElementById("projects-button");
+
+    // Get the <span> element that closes the modal
+    const span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn_one.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  }
+  openModal();
+</script>
+
+<!-- <div id="projects-button"></div> -->
+
+<%#= button_to "New", action: "new" %>
+
+<%#= image_tag "logo_color.png", alt: "Roan Mertens logo", id:"home-logo-image" %>
 
