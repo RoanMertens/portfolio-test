@@ -21,10 +21,17 @@
       </div>
       <div class="flex-item">
         <h5>I need a website!</h5>
-        <div id="projects-button" class="button bg">
-          <i class="fas fa-code"></i>
-          <p>projects</p>
-        </div>
+        <% if check_devises == "desktop" %>
+          <div id="modal-button" class="button bg">
+            <i class="fas fa-code"></i>
+            <p>projects</p>
+          </div>
+        <% else %>
+          <%=link_to(mobile_projects_path, :id => "myBtn-two", :class => "button bg") do %>
+            <i class="fas fa-plus"></i>
+            <p>projects</p>
+          <% end %>
+        <% end %>
       </div>
       <div class="flex-item">
         <h5>I want to be your friend!</h5>
@@ -38,7 +45,7 @@
   <%= render 'shared/footer' %>
 </div>
 
-<div id="projects-modal" class="modal">
+<div id="index-modal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <%= render "shared/modal" %>
