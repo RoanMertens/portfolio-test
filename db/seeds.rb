@@ -18,30 +18,40 @@ names = ['Buddy Up',
          'On Board',
          'Static about page',
          'Cocktail libary',
-         'Portfolio',
-         'Biomimic Studio',
-         'Hangman',
-         'Wuxia Reader']
+         'Version One Portfolio',
+         'Biomimic Studio'
+       ]
+ # 'Hangman',
+ # 'Wuxia Reader'
 
 location = ['https://rails-airbnb-friend-group.herokuapp.com/',
             'http://get-on-board.co/',
             'https://roanmertens.github.io/profile/',
             'https://calm-mesa-66178.herokuapp.com/',
             'https://rails-profile-rm.herokuapp.com/',
-            'testlocation.com',
-            'testlocation.com',
-            'testlocation.com']
+            'https://www.biomimicstudio.org/'
+          ]
+# 'testlocation.com',
+# 'testlocation.com'
 
 github = ['https://github.com/msanchezb/rails-airbnb-friend-group',
           'https://github.com/freddiescadding/on-board',
           'https://github.com/RoanMertens/profile',
           'https://github.com/RoanMertens/rails-mister-cocktail',
           'https://github.com/RoanMertens/rails-profile',
-          'testlocation.com',
-          'testlocation.com',
-          'testlocation.com']
+          false
+        ]
+# false,
+# false
 
-image = '--'
+image = ['projects/buddy-up.png',
+         'projects/on-board.png',
+         'projects/static-about.png',
+         'projects/cocktail.png',
+         'projects/portfolio-one.png',
+         'projects/biomimic-studio.png'
+       ]
+
 blurb = ['The platform is an e-commerce platform inspired by Airbnb made
          during the Le Wagon bootcamp. The product was made utilising the
          following languages: JavaScript, Ruby on Rails, Ajax, HTML and
@@ -62,18 +72,20 @@ blurb = ['The platform is an e-commerce platform inspired by Airbnb made
          'It is the portfolio website of Biomimic Studio. Biomimic Studio is a
          is the animatronics company from Gustav Hoegen. Biomimic Studio worked
          on movies such as Jurassic World, Star Wars and Doctor Who.
-         The website is made using html, CSS and JavaScript.',
-         'It is the hangman game made in ruby using api\'s',
-         'It is an online Chinese novel reading website made utilising
-         the following languages: JavaScript, Ruby on Rails, Ajax, HTML and
-         CSS']
+         The website is made using html, CSS and JavaScript.'
+       ]
+# 'It is the hangman game made in ruby using api\'s',
+# 'It is an online Chinese novel reading website made utilising
+# the following languages: JavaScript, Ruby on Rails, Ajax, HTML and
+# CSS'
 
-names.each_with_index do |name, index|
-  Project.create(name: name,
-                 location_url: location[index],
-                 github_url: github[index],
-                 image_url: image,
-                 blurb: blurb[index])
+# creates projects
+names.length.times do |i|
+  Project.create(name: names[i],
+                 location_url: location[i],
+                 github_url: github[i],
+                 image_url: image[i],
+                 blurb: blurb[i])
 end
 
 projects = Project.all

@@ -14,13 +14,15 @@
               <p>image url: <%#= project.image_url %></p>
               <p>text: <%#= project.blurb %></p>
             </div> -->
-              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-                <div class="card-category"><i class="fab fa-github-square"></i> GitHub</div>
+
+              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(<%= image_path(project.image_url) %>)">
+                <!-- <div class="card-category"><i class="fab fa-github-square"></i> GitHub</div> -->
                 <div class="card-description">
                   <h2><%= project.name %></h2>
                   <p><%= project.blurb.first(80) %></p>
                 </div>
-                <img class="card-user" src="">
+                <!-- <img class="card-user" src=""> -->
+                <%#= , class: "card-user") %>
                 <a class="card-link" href="<%= project_path(project) %>" ></a>
               </div>
           </div>
