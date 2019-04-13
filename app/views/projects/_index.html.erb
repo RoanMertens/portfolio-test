@@ -4,15 +4,15 @@
 <div class="container padded">
   <div class="row">
     <% @projects.each do |project| %>
-        <%= link_to "link", project_path(project), remote: true %>
-      <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= link_to project.name, project_path(project), remote: true %>
+     <!--  <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(<%= image_path(project.image_url) %>)">
           <div class="card-description">
-            <h2><%= project.name %></h2>
-            <p><%= project.blurb.first(80) %></p>
+            <h2><%#= project.name %></h2>
+            <p><%#= project.blurb.first(80) %></p>
           </div>
         </div>
-      </div>
+      </div> -->
     <% end %>
   </div>
 </div>

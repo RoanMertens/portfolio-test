@@ -7,6 +7,14 @@
   h6{
     color: white;
   }
+  a{
+    color: $white;
+    text-decoration: none;
+  }
+  a:hover{
+    // color: $white;
+    color: $light-gray;
+  }
 }
 
 @media only screen and (min-width: 700px) {

@@ -4,12 +4,14 @@ function openModal() {
 
   let modal = document.getElementById('index-modal');
 
-  let btn = document.getElementById('modal-button');
+  let modalButtons = document.getElementsByClassName('modal-button');
 
   let span = document.getElementsByClassName("close")[0];
 
-  btn.onclick = function() {
+  for (var i = 0; i < modalButtons.length; i++) {
+    modalButtons[i].onclick = function() {
       modal.style.display = "block";
+    };
   }
 
   span.onclick = function() {

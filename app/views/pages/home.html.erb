@@ -1,0 +1,64 @@
+<div id="background">
+  <div class="container one">
+    <div id="title-container">
+      <div class="grid-box hi"><h1>HI</h1></div>
+      <div class="grid-box im"><h1>I'M</h1></div>
+      <div class="grid-box first-name"><h1>ROAN</h1></div>
+      <div class="grid-box last-name"><h1>MERTENS</h1></div>
+      <div class="grid-box description"><h1>FULL-STACK WEB DEVELOPER</h1></div>
+    </div>
+  </div>
+  <div class="container two">
+    <%= image_tag "logo_new_three.svg", alt: "Roan Mertens logo", id:"home-logo-image" %>
+    <h3>Why are you here?</h3>
+    <div id="flex-container">
+      <div class="flex-item">
+        <h5>I am here to recruit you!</h5>
+        <% if check_devises == "desktop" %>
+          <%=link_to(about_path, remote: true, :class => "button bg modal-button") do %>
+            <i class="fas fa-search"></i>
+            <p>about</p>
+          <% end %>
+        <% else %>
+          <%=link_to(about_path, :class => "button bg") do %>
+            <i class="fas fa-search"></i>
+            <p>about</p>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="flex-item">
+        <h5>I need a website!</h5>
+        <% if check_devises == "desktop" %>
+          <%=link_to(projects_path, remote: true, :class => "button bg modal-button") do %>
+            <i class="fas fa-code"></i>
+            <p>projects</p>
+          <% end %>
+        <% else %>
+          <%=link_to(projects_path, :class => "button bg") do %>
+            <i class="fas fa-plus"></i>
+            <p>projects</p>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="flex-item">
+        <h5>I want to be your friend!</h5>
+        <%= mail_to"contact@rmertens.com", :class => "button bg" do %>
+          <i class="fas fa-plus"></i>
+          <p>contact</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
+
+<div id="index-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <%= render "shared/modal" %>
+  </div>
+</div>
+
+<script type="text/javascript">
+  const modal = document.getElementById('modal-inner');
+</script>

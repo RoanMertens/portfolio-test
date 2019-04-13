@@ -1,24 +1,28 @@
 class ProjectsController < ApplicationController
-  before_action :find_project, only: [:show]
+  before_action :project, only: [:show]
+  before_action :projects, only: [:index]
 
   def index
-    get_projects
-  end
-
-  def mobile
-    get_projects
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def show
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   private
 
-  def get_projects
+  def projects
     @projects = Project.all
   end
 
-  def find_project
+  def project
     @project = Project.find(params[:id])
   end
 end
