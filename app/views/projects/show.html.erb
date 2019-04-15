@@ -1,6 +1,3 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
-
 <h3><%= @project.name %></h3>
 <p>website: <%= @project.location_url %></p>
 <p>github: <%= @project.github_url %></p>
@@ -9,16 +6,21 @@
 
 <p> ------ </p>
 
-<h3>Testemonials</h3>
-<% @project.testemonials.each do |testemonial| %>
-  <h4><%= testemonial.name %></h4>
-  <p>connection: <%= testemonial.connection %></p>
-  <p>content: <%= testemonial.content %></p>
+<% if @project.testemonials.length > 0 %>
+  <h3>Testemonials</h3>
+    <% @project.testemonials.each do |testemonial| %>
+      <div class="message">
+        <div class="message-name">
+          <h3><%= testemonial.name %></h3>
+          <p><%= testemonial.created_at.strftime("%B %d %Y") %></p>
+        </div>
+        <div class="message-body">
+          <p><%= testemonial.content %></p>
+        </div>
+        <div class="message-status">
+          <p class="status pending">connection:</p>
+          <p class="price"><%= testemonial.connection %></p>
+        </div>
+      </div>
+    <% end %>
 <% end %>
-
-<p> ------ </p>
-<div>
-  <%= link_to 'HOME', root_path %>
-  <%= link_to 'ABOUT', about_path %>
-  <%= link_to 'PROJECTS', projects_path %>
-</div>

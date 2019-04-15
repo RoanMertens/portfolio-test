@@ -1,3 +1,8 @@
 /* ---------------------------------------------------------*/
 /* ---------Declaring styles for projects show page---------*/
 /* ---------------------------------------------------------*/
+
+.left-and-right-buttons {
+  display: flex;
+  justify-content: space-between;
+}

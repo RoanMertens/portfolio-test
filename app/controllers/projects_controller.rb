@@ -2,6 +2,7 @@ class ProjectsController < ApplicationController
   before_action :project, only: [:show]
   before_action :projects, only: [:index]
 
+
   def index
     respond_to do |format|
       format.html

@@ -1,24 +1,52 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+<%#= link_to("Previous Post", @project.previous) if @project.previous %>
+<%#= link_to("Next project", @project.next) %>
+<!-- <p><%#= @project.next %></p> -->
 
-<h3><%= @project.name %></h3>
-<p>website: <%= @project.location_url %></p>
-<p>github: <%= @project.github_url %></p>
-<p>image url: <%= @project.image_url %></p>
-<p>text: <%= @project.blurb %></p>
+<div class="left-and-right-buttons">
+  <%= link_to @project.prev, class: 'previous-button' ,remote: true do %>
+    <i class="fas fa-chevron-left"></i>
+  <% end %>
 
-<p> ------ </p>
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path(@project.image_url) %>);">
+    <div class="banner-content">
+      <h1><%= @project.name %></h1>
+      <div class="buttons">
+        <a href="<%= @project.location_url %>"  target="_blank" class="btn btn-primary btn-lg">
+          Website link
+        </a>
+        <a href="<%= @project.github_url %>"  target="_blank" class="btn btn-primary btn-lg">
+          Github link
+        </a>
+      </div>
+      <div>
+        <p><%= @project.blurb %></p>
+      </div>
+    </div>
+  </div>
 
-<h3>Testemonials</h3>
-<% @project.testemonials.each do |testemonial| %>
-  <h4><%= testemonial.name %></h4>
-  <p>connection: <%= testemonial.connection %></p>
-  <p>content: <%= testemonial.content %></p>
-<% end %>
-
-<p> ------ </p>
-<div>
-  <%= link_to 'HOME', root_path %>
-  <%= link_to 'ABOUT', about_path %>
-  <%= link_to 'PROJECTS', projects_path %>
+  <% if @project.testemonials.length > 0 %>
+    <div class="testemonials">
+      <h3>Testemonials</h3>
+      <% @project.testemonials.each do |t| %>
+        <div class="message">
+          <div class="message-name">
+            <h3><%= t.name %></h3>
+            <p><%= t.created_at.strftime("%B %d %Y") %></p>
+          </div>
+          <div class="message-body">
+            <p><%= t.content %></p>
+          </div>
+          <div class="message-status">
+            <p class="status pending">connection:</p>
+            <p class="price"><%= t.connection %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+  <%= link_to @project.next, class: 'next-button' ,remote: true do %>
+    <i class="fas fa-chevron-right"></i>
+  <% end %>
 </div>
+
+
