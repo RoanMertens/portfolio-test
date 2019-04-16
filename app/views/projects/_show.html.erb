@@ -1,10 +1,6 @@
-<%#= link_to("Previous Post", @project.previous) if @project.previous %>
-<%#= link_to("Next project", @project.next) %>
-<!-- <p><%#= @project.next %></p> -->
-
 <div class="left-and-right-buttons">
-  <%= link_to @project.prev, class: 'previous-button' ,remote: true do %>
-    <i class="fas fa-chevron-left"></i>
+  <%= link_to @project.prev, class: 'show-button previous-button' ,remote: true do %>
+    <i class="fas fa-chevron-left left-arrow"></i>
   <% end %>
 
   <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path(@project.image_url) %>);">
@@ -44,8 +40,8 @@
       <% end %>
     </div>
   <% end %>
-  <%= link_to @project.next, class: 'next-button' ,remote: true do %>
-    <i class="fas fa-chevron-right"></i>
+  <%= link_to @project.next, class: 'show-button next-button' ,remote: true do %>
+    <i class="fas fa-chevron-right right-arrow"></i>
   <% end %>
 </div>
 

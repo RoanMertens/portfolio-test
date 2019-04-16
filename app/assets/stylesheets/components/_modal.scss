@@ -17,28 +17,36 @@
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  // padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-height: 100%;
-  min-height: 40%;
+  max-height: 80%;
   overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 4vw;
   .title{
     text-align: center;
   }
 }
 
-/* The Close Button */
-// .close {
-//   color: #aaaaaa;
-//   // margin-left: 98%;
-//   font-size: 28px;
-//   font-weight: bold;
-// }
+#modal-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 0;
+  background-color: #F5F5F5;
+}
 
-// .close:hover,
-// .close:focus {
-//   color: #000;
-//   text-decoration: none;
-//   cursor: pointer;
-// }
+#modal-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+#modal-scrollbar::-webkit-scrollbar * {
+  background:transparent; // manage scrollbar background color here
+}
+
+#modal-scrollbar::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: $light-blue;
+  background:$light-blue !important;
+}
+
