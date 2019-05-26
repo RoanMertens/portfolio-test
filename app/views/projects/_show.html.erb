@@ -1,5 +1,9 @@
+<%= link_to(projects_path, remote: true, :class => "show-back-button") do %>
+  <i class="fas fa-chevron-up"></i>
+<% end %>
+
 <div class="left-and-right-buttons">
-  <%= link_to @project.prev, class: 'show-button previous-button' ,remote: true do %>
+  <%= link_to(@project.prev, remote: true, :class => 'show-button previous-button') do %>
     <i class="fas fa-chevron-left left-arrow"></i>
   <% end %>
 
@@ -19,7 +23,6 @@
       </div>
     </div>
   </div>
-
   <% if @project.testemonials.length > 0 %>
     <div class="testemonials">
       <h3>Testemonials</h3>
@@ -40,6 +43,7 @@
       <% end %>
     </div>
   <% end %>
+
   <%= link_to @project.next, class: 'show-button next-button' ,remote: true do %>
     <i class="fas fa-chevron-right right-arrow"></i>
   <% end %>

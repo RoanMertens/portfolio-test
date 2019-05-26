@@ -1,7 +1,9 @@
 <div class="green-container">
   <div class="text-item">
-    <h3>About Me</h3>
-    <div>
+    <div class="title">
+      <h2>About Me</h2>
+    </div>
+    <div id="about-intro">
       <p>I have been studying Ruby and Rails intensively for the past 5 months,
       both on the 9-week Le Wagon RoR bootcamp and alongside my personal and
       commercial projects since the course finished in September.
@@ -9,7 +11,9 @@
       employed MVC architecture and ActiveRecord. I am very comfortable
       with git and version control. In Javascript I have studied the vanilla
       language, and am hoping to refactor some ongoing projects in jQuery.</p>
-      <div><!-- image --></div>
+      <div id="about-image-container">
+        <%= image_tag "roan.jpg", alt: "Roan Mertens photo", id:"about-image-roan", class:"avatar-large" %>
+      </div>
     </div>
   </div>
 

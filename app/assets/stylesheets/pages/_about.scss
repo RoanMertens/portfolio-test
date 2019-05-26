@@ -2,44 +2,10 @@
 /* ---------Declaring styles for about page----------*/
 /* --------------------------------------------------*/
 
-// .green-container{
-//   background-color: $green;
-//   min-height: 90vh;
-//   text-align: center;
-//   .flex-container{
-//   display: flex;
-//   justify-content: center;
-//   }
-// }
+#about-intro{
+  text-align: center;
+}
 
-// .text-item{
-//   min-height: 20vw;
-// }
+#about-intro{
 
-// #right-rounded{
-//   h3{
-//   color: $black;
-//   }
-//   background-color: white;
-//   border: 2px solid white;
-//   border-left: 0;
-//   border-radius: 0 50vh 50vh 0 ;
-//   padding: 3vh 3vw;
-//   margin-right: 20vw;
-// }
-
-// #left-rounded{
-//   h3{
-//   color: $black;
-//   }
-//   background-color: white;
-//   border: 2px solid white;
-//   border-right: 0;
-//   border-radius: 50vh 0 0 50vh;
-//   padding: 3vh 3vw;
-//   margin-left: 20vw;
-// }
-
-// .padded{
-//   background-color: $light-gray;
-// }
+}

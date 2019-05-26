@@ -96,7 +96,8 @@
   grid-row-end: 5;
 }
 .grid-box{
-  background-color: $white;
+  border: solid $white 3px;
+  background: $white-op-one;
   margin: 3px;
   h1{
     margin: 0;
