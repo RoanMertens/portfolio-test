@@ -23,26 +23,6 @@
       </div>
     </div>
   </div>
-  <% if @project.testemonials.length > 0 %>
-    <div class="testemonials">
-      <h3>Testemonials</h3>
-      <% @project.testemonials.each do |t| %>
-        <div class="message">
-          <div class="message-name">
-            <h3><%= t.name %></h3>
-            <p><%= t.created_at.strftime("%B %d %Y") %></p>
-          </div>
-          <div class="message-body">
-            <p><%= t.content %></p>
-          </div>
-          <div class="message-status">
-            <p class="status pending">connection:</p>
-            <p class="price"><%= t.connection %></p>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  <% end %>
 
   <%= link_to @project.next, class: 'show-button next-button' ,remote: true do %>
     <i class="fas fa-chevron-right right-arrow"></i>
