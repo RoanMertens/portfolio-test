@@ -1,20 +1,30 @@
-<%= link_to(projects_path, remote: true, :class => "show-back-button") do %>
-  <i class="fas fa-chevron-up"></i>
-<% end %>
-
-<div class="left-and-right-buttons">
-  <%= link_to(@project.prev, remote: true, :class => 'show-button previous-button') do %>
-    <i class="fas fa-chevron-left left-arrow"></i>
+<div id="show-grid">
+  <%= link_to(projects_path, remote: true, :class => "show-back-button") do %>
+  <i class="fas fa-chevron-up up-arrow"></i>
+  <% end %> <%= link_to(@project.prev, remote: true, :class => 'show-button
+  previous-button') do %>
+  <i class="fas fa-chevron-left left-arrow"></i>
   <% end %>
 
-  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path(@project.image_url) %>);">
+  <div
+    class="banner"
+    style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path(@project.image_url) %>);"
+  >
     <div class="banner-content">
       <h1><%= @project.name %></h1>
       <div class="buttons">
-        <a href="<%= @project.location_url %>"  target="_blank" class="btn btn-primary btn-lg">
+        <a
+          href="<%= @project.location_url %>"
+          target="_blank"
+          class="btn btn-primary btn-lg"
+        >
           Website link
         </a>
-        <a href="<%= @project.github_url %>"  target="_blank" class="btn btn-primary btn-lg">
+        <a
+          href="<%= @project.github_url %>"
+          target="_blank"
+          class="btn btn-primary btn-lg"
+        >
           Github link
         </a>
       </div>
@@ -24,9 +34,8 @@
     </div>
   </div>
 
-  <%= link_to @project.next, class: 'show-button next-button' ,remote: true do %>
-    <i class="fas fa-chevron-right right-arrow"></i>
+  <%= link_to @project.next, class: 'show-button next-button' ,remote: true do
+  %>
+  <i class="fas fa-chevron-right right-arrow"></i>
   <% end %>
 </div>
-
-
