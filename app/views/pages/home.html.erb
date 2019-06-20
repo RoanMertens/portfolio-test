@@ -17,30 +17,16 @@
       <div id="flex-container">
         <div class="flex-item">
           <h5>I am here to recruit you!</h5>
-          <% if check_devises == "desktop" %>
-            <%=link_to(about_path, remote: true, :class => "button bg modal-button") do %>
-              <i class="fas fa-search"></i>
-              <p>about</p>
-            <% end %>
-          <% else %>
-            <%=link_to(about_path, :class => "button bg") do %>
-              <i class="fas fa-search"></i>
-              <p>about</p>
-            <% end %>
+          <%=link_to(about_path, remote: true, :class => "button bg modal-button") do %>
+            <i class="fas fa-search"></i>
+            <p>about</p>
           <% end %>
         </div>
         <div class="flex-item">
           <h5>I need a website!</h5>
-          <% if check_devises == "desktop" %>
-            <%=link_to(projects_path, remote: true, :class => "button bg modal-button") do %>
-              <i class="fas fa-code"></i>
-              <p>projects</p>
-            <% end %>
-          <% else %>
-            <%=link_to(projects_path, :class => "button bg") do %>
-              <i class="fas fa-plus"></i>
-              <p>projects</p>
-            <% end %>
+          <%=link_to(projects_path, remote: true, :class => "button bg modal-button") do %>
+            <i class="fas fa-code"></i>
+            <p>projects</p>
           <% end %>
         </div>
         <div class="flex-item">
