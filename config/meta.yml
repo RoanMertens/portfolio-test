@@ -1,0 +1,5 @@
+meta_product_name: "Roan Mertens"
+meta_title: "Roan Mertens - Portfolio Website"
+meta_description: "I am a Full-Stack web developer with a background in art, education and filmmaking. I specialise in Ruby on Rails and JavaScript. I finished the full-stack web development course at Le Wagon and am currently working at Odicci as a junior developer and at the Le Wagon bootcamp as a Teaching Assistant."
+meta_image: "background_website.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
