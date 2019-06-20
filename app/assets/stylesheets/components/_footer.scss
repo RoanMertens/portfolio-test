@@ -2,7 +2,6 @@
 /* -------------Declaring footer styles--------------*/
 /* --------------------------------------------------*/
 #footer-text{
-  // margin-top: 3vw;
   padding: 2vw 0;
   margin-top: 3px;
   border: solid $white 3px;
@@ -17,7 +16,6 @@
     text-decoration: none;
   }
   a:hover{
-    // color: $white;
     color: $light-gray;
   }
 }

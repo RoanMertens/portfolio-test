@@ -1,6 +1,0 @@
-<div>
-  <% ['about', 'contact', 'index'].each_with_index do |t, i| %>
-    <% a = [root_path, about_path, contact_path, projects_path] %>
-      <%= link_to t.upcase, (a[i]) unless action_name == t %>
-  <% end %>
-</div>

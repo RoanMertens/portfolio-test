@@ -1,26 +1,43 @@
-<h3><%= @project.name %></h3>
-<p>website: <%= @project.location_url %></p>
-<p>github: <%= @project.github_url %></p>
-<p>image url: <%= @project.image_url %></p>
-<p>text: <%= @project.blurb %></p>
+<div class="modal" style="display: block;">
+  <div id="show-grid">
+    <%= link_to(projects_path, :class => "show-back-button") do %>
+    <i class="fas fa-chevron-up up-arrow"></i>
+    <% end %> <%= link_to(@project.prev, :class => 'show-button
+    previous-button') do %>
+    <i class="fas fa-chevron-left left-arrow"></i>
+    <% end %>
 
-<p> ------ </p>
-
-<% if @project.testemonials.length > 0 %>
-  <h3>Testemonials</h3>
-    <% @project.testemonials.each do |testemonial| %>
-      <div class="message">
-        <div class="message-name">
-          <h3><%= testemonial.name %></h3>
-          <p><%= testemonial.created_at.strftime("%B %d %Y") %></p>
+    <div
+      class="banner"
+      style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path(@project.image_url) %>);"
+    >
+      <div class="banner-content">
+        <h1><%= @project.name %></h1>
+        <div class="buttons">
+          <a
+            href="<%= @project.location_url %>"
+            target="_blank"
+            class="btn btn-primary btn-lg"
+          >
+            Website link
+          </a>
+          <a
+            href="<%= @project.github_url %>"
+            target="_blank"
+            class="btn btn-primary btn-lg"
+          >
+            Github link
+          </a>
         </div>
-        <div class="message-body">
-          <p><%= testemonial.content %></p>
-        </div>
-        <div class="message-status">
-          <p class="status pending">connection:</p>
-          <p class="price"><%= testemonial.connection %></p>
+        <div>
+          <p><%= @project.blurb %></p>
         </div>
       </div>
+    </div>
+
+    <%= link_to @project.next, class: 'show-button next-button' do
+    %>
+    <i class="fas fa-chevron-right right-arrow"></i>
     <% end %>
-<% end %>
+  </div>
+</div>
