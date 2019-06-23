@@ -19,4 +19,7 @@
 .flex-container{
   display: flex;
   justify-content: space-around;
+  li{
+    margin-top: 3px;
+  }
 }
