@@ -9,7 +9,7 @@
       $black-half,
       $black-half
     ),
-    url(background.jpg) no-repeat top center fixed;
+    image-url("background.jpg") no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
