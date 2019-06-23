@@ -10,14 +10,12 @@
 
 .show-back-button {
   text-align: center;
-  background-color: $light-gray;
   grid-column: 1 / span 3;
   grid-row: 1 / span 1;
 }
 
 .show-back-button:hover {
   transition: 1s;
-  background-color: $black;
   opacity: 0.8;
   .up-arrow {
     transition: 1s;
@@ -26,15 +24,12 @@
 }
 
 .previous-button {
-  // grid-area: previous;
-  background-color: $light-gray;
   width: 4vw;
   grid-column: 1 / span 1;
   grid-row: 2 / span 2;
 }
 .previous-button:hover {
   transition: 1s;
-  background-color: $black;
   opacity: 0.8;
   .left-arrow {
     transition: 1s;
@@ -47,15 +42,12 @@
 }
 
 .next-button {
-  // grid-area: next;
-  background-color: $light-gray;
   width: 4vw;
   grid-column: 3 / span 1;
   grid-row: 2 / span 2;
 }
 .next-button:hover {
   transition: 1s;
-  background-color: $black;
   opacity: 0.8;
   .right-arrow {
     transition: 1s;
