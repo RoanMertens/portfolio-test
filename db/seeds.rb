@@ -54,7 +54,7 @@ blurb = ['The platform is an e-commerce platform inspired by Airbnb made
          contacted and where I present my projects. The product was made
          utilising the following languages: JavaScript, Ruby on Rails,
          AJAX, HTML and CSS.',
-         'It is the portfolio website of Biomimic Studio. Biomimic Studio is a
+         'It is the portfolio website of Biomimic Studio. Biomimic Studio
          is the animatronics company from Gustav Hoegen. Biomimic Studio worked
          on movies such as Jurassic World, Star Wars and Doctor Who.
          The website is made using HTML, CSS and JavaScript.'
