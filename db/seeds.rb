@@ -41,22 +41,22 @@ image = ['projects/buddy-up.png',
          'projects/biomimic-studio.png'
        ]
 
-blurb = ['The platform is an e-commerce platform inspired by Airbnb made
+blurb = ['This is an e-commerce platform inspired by Airbnb. It was made
          during the Le Wagon bootcamp. The product was made utilising the
          following languages: JavaScript, Ruby on Rails, Ajax, HTML and
-         CSS whilst also working as a team on Github/Heroku.',
-         'On Board is a platform for boardgame enthausiasts who are
-         looking for others to do boardgames with. The product was made
+         CSS whilst working as a team on Github/Heroku.',
+         'On Board is a platform for boardgame enthusiasts who are
+         looking for others to play boardgames with. The product was made
          utilising the following languages: JavaScript, Ruby on Rails,
-         AJAX, HTML and CSS whilst also working as a team on
+         AJAX, HTML and CSS whilst working as a team on
          Github/Heroku.',
          'The portfolio website you are currently on is where I can be
          contacted and where I present my projects. The product was made
          utilising the following languages: JavaScript, Ruby on Rails,
          AJAX, HTML and CSS.',
-         'It is the portfolio website of Biomimic Studio. Biomimic Studio
-         is the animatronics company from Gustav Hoegen. Biomimic Studio worked
-         on movies such as Jurassic World, Star Wars and Doctor Who.
+         'This is the portfolio website of Biomimic Studio. Biomimic Studio
+         is the animatronics company from Gustav Hoegen. Biomimic Studio
+         worked on movies such as Jurassic World, Star Wars and Doctor Who.
          The website is made using HTML, CSS and JavaScript.'
        ]
 # 'It is the snake game made in ruby using api\'s',
